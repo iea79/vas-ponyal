@@ -1,14 +1,48 @@
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-	padding: 1em 0;
-	background-color: #ddd;
+	padding: 1.3em 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 15;
+	// background-color: #ddd;
+	border-bottom: 1px solid rgba($color_withe, 0.1);
+
+	@media (min-width: 768px) {
+		padding: 1.9em 0;
+	}
 
 	&__content {
 		@extend .container_center;
-		margin: auto;
+		margin: 0 auto;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
+	}
+
+	&__phone {
+		font-weight: bold;
+		font-size: 1.5em;
+		color: $color_withe;
+		text-decoration: none;
+	}
+
+	.logo {
+		margin-left: 5em;
+
+		@media (min-width: 768px) {
+			margin-left: 0;
+		}
+
+		img {
+			width: 6.7em;
+
+			@media (min-width: 768px) {
+				width: 8.7em;
+			}
+		}
 	}
 }
 

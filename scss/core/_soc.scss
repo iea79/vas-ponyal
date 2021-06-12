@@ -1,22 +1,17 @@
 // Social link
+
 .soc {
-	float: left;
+	margin: 0.7em 0;
+
 	a {
 		display: inline-block;
-		width: 30px;
-		height: 30px;
-		border-radius: 50%;
-		background-color: #000;
-		text-align: center;
+		color: #9066D2;
+		font-size: 2em;
 		text-decoration: none;
-		@include trs(0.3s);
+		margin-right: 0.5em;
+
 		&:hover {
-			opacity: .8;
-		}
-		&:before {
-			content: 'soc';
-			color: #fff;
-			text-decoration: none;
+			opacity: 0.8;
 		}
 	}
 }

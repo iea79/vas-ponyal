@@ -1,11 +1,11 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family: "Open Sans";
-$main_color: #000;
+$main_font_family: "Noah";
+$main_color: #1B3E52;
 $main_line_height: 1.2;
 $main_font_size: 16px;
 
-$container_width: 80em;
+$container_width: 94.1em;
 
 $footer_height: auto;
 
@@ -34,19 +34,19 @@ $grid_padding: 20px;
 // Input variables
 
 // Input color
-$input_color: $main_color;
-$input_bg_color: #fff;
-$input_border_color: #ddd;
-$input_placeholder_color: #ddd;
+$input_color: $color_withe;
+$input_bg_color: rgba(255, 255, 255, 0.1);
+$input_border_color: rgba(255, 255, 255, 0.1);
+$input_placeholder_color: $color_withe;
 
 // Input hover color
-$input_hover_color: $main_color;
+$input_hover_color: $color_withe;
 $input_hover_bg_color: $input_bg_color;
 $input_hover_border_color: $input_border_color;
 $input_hover_placeholder_color: $input_placeholder_color;
 
 // Input focus color
-$input_focus_color: $main_color;
+$input_focus_color: $color_withe;
 $input_focus_bg_color: $input_bg_color;
 $input_focus_border_color: $input_border_color;
 $input_focus_placeholder_color: $input_placeholder_color;
@@ -64,8 +64,8 @@ $input_error_border_color: red;
 $input_error_placeholder_color: red;
 
 // Button variables
-$btn_default_bg_color: #ddd;
-$btn_default_text_color: $main_color;
+$btn_default_bg_color: #5CCE7C;
+$btn_default_text_color: $color_withe;
 $btn_contrast_text_color: $color_withe;
 $btn_default_bg_color_hover: darken($btn_default_bg_color, 7%);
 $btn_default_bg_color_active: darken($btn_default_bg_color, 10%);

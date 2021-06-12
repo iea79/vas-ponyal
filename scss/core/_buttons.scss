@@ -1,11 +1,12 @@
 // Style for button and pseudo button for input and link
 
-.btn {
+.btn,
+.vas-ponial .b24-form-btn {
 	color: $btn_default_text_color;
-	font-family: $main_font_family;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 5px 15px 7px;
+	font: 600 1.125em/1.2 $main_font_family;
+	// font-size: 1.125em;
+	// font-weight: 600;
+	padding: 1.2em 2.5em;
 	border: none;
 	outline: none;
 	text-decoration: none;
@@ -14,19 +15,23 @@
 	text-align: center;
 	max-width: 100%;
 	cursor: pointer;
-	border-radius: 5px;
+	border-radius: 0.55em;
 	transition: 0.3s;
-	transition-property: background color border-color;
+	height: auto;
+	box-shadow: none;
+	transition-property: background, color, border-color;
 
 	&:hover {
 		background-color: $btn_default_bg_color_hover;
 		color: $btn_default_text_color;
+		box-shadow: none;
 	}
 
 	&:active,
 	&:focus {
 		background-color: $btn_default_bg_color_active;
 		color: $btn_default_text_color;
+		box-shadow: none;
 	}
 	@each $status_el, $color_bg in $el_colors {
 		&_#{$status_el} {

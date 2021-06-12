@@ -1,6 +1,9 @@
 .form {
+	margin: 2.5em 0;
+	position: relative;
+
 	&__row {
-		margin-bottom: 15px;
+		margin-bottom: 1.9em;
 
 		.btn,
 		input:not([type]),
@@ -17,44 +20,254 @@
 		}
 
 		textarea {
+			resize: vertical;
 			max-width: 100%;
-			max-width: 100%;
-			min-height: 150px;
+			min-height: 14.3em;
 		}
 	}
 
-	&__label {}
+	&__body {
+
+		@media (min-width: 768px) {
+			display: flex;
+			margin-left: -1.9em;
+
+			> div {
+				padding-left: 1.9em;
+				width: 50%;
+			}
+		}
+
+	}
+
+	&__left {}
+
+	&__right {}
+
+	&__footer {
+
+		@media (min-width: 768px) {
+			margin-top: 0.2em;
+			display: flex;
+			align-items: center;
+			margin-left: -1.9em;
+
+			> div {
+				padding-left: 1.9em;
+				width: 50%;
+			}
+		}
+	}
+
+	&__action {
+		.btn {
+			width: 100%;
+			max-width: none;
+		}
+	}
+
+	&__privacy {
+		font-size: 0.8em;
+		line-height: 1.4;
+		color: rgba($color_withe, 0.7);
+
+		@media (max-width: 767px) {
+			margin-top: 1.2em;
+			text-align: center;
+		}
+	}
+
+	&__message:not(:empty) {
+		width: 100%;
+		position: absolute;
+		margin-top: 2em;
+		text-align: center;
+		font-size: 1.4em;
+	}
+
+}
+
+.vas-ponial {
+	.b24-form {
+		--b24-primary-color: #5CCE7C;
+		--b24-primary-text-color: #FFF;
+		--b24-primary-hover-color: var(--b24-primary-color);
+		--b24-text-color: #000;
+		--b24-background-color: #FFF;
+		--b24-field-border-color: rgba(0,0,0,.1);
+		--b24-field-background-color: rgba(0,0,0,.08);
+		--b24-field-focus-background-color: #fff;
+		--b24-popup-background-color: #fff;
+		--b24-font-family-default: $main_font_family,Helvetica,Arial,sans-serif;
+		--b24-font-family: $main_font_family;
+	}
+
+	.b24-form {
+		line-height: 1.5;
+		font-family: $main_font_family;
+
+		&-wrapper {
+			background: linear-gradient(103.1deg, #3300C4 0.01%, #79008C 92.46%);
+			padding: 2.3em 1.5em 1.5em;
+
+			@media (min-width: 768px) {
+				padding: 3em 3em 2.4em;
+			}
+		}
+
+		&-field {
+			margin-bottom: 1.9em;
+
+			&-agreement {
+				margin-bottom: 0;
+
+				&-link {
+					color: $color_withe;
+					font-size: 0.9em;
+					line-height: 1.5;
+				}
+
+				+ .b24-window {
+					.b24-window-scrollable {
+						background: linear-gradient(103.1deg, #3300C4 0.01%, #79008C 92.46%);
+						max-height: 100vh;
+						overflow: auto;
+					}
+				}
+
+			}
+		}
+
+		&-btn {
+			&-block {
+				padding: 0;
+			}
+
+			&-container {
+				display: block;
+				margin: 0;
+			}
+		}
+
+		&-padding-side {
+			padding: 0;
+		}
+
+		&-control {
+			&-icon-after {
+				.b24-form-control,
+				.b24-form-control-label {
+					color: $color_withe;
+					font-weight: 500;
+					font-size: 1.1em;
+					padding-left: 1.4em;
+					opacity: 1;
+					padding-right: 1.4em;
+					font: 1.1em/1.1 var(--b24-font-family);
+				}
+			}
+
+			&-agreement {
+				.b24-form-control-container {
+					display: flex;
+				}
+
+				input {
+					margin-right: 0.7em;
+				}
+
+				.b24-form-control-required {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.b24-window-popup {
+		&-wrapper {
+			background: transparent;
+			max-width: 37em;
+		}
+
+		&-body {
+			color: $color_withe;
+			min-height: 0;
+		}
+
+		&-wrapper {
+			.b24-window-scrollable {
+				max-height: none;
+				overflow: auto;
+			}
+
+			.b24-form-wrapper {
+				border-radius: 1.1em;
+
+				&.b24-form-border-bottom {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.b24-window-close {
+		background: none;
+	}
+
+	.b24-form-control-not-empty+.b24-form-control-label,
+	.b24-form-control-select-label,
+	.b24-form-control:focus+.b24-form-control-label {
+		display: none;
+	}
+
+	.b24-form-state-container .b24-form-error,
+	.b24-form-state-container .b24-form-loader,
+	.b24-form-state-container .b24-form-success,
+	.b24-form-state-container .b24-form-warning,
+	.b24-from-state-on .b24-form-state-container {
+		bottom: 0;
+	}
 }
 // Input text and textarea ================================================
-input:not([type]),
-input[type=datetime],
-input[type=email],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=text],
-input[type=url],
-textarea {
-	background-color: $input_bg_color;
+.vas-ponial input:not([type]),
+.vas-ponial input[type=datetime],
+.vas-ponial input[type=email],
+.vas-ponial input[type=number],
+.vas-ponial input[type=password],
+.vas-ponial input[type=search],
+.vas-ponial input[type=string],
+.vas-ponial input[type=tel],
+.vas-ponial input[type=text],
+.vas-ponial input[type=url],
+.vas-ponial textarea {
+	background: $input_bg_color;
+	background-image: none;
 	border: 1px solid $input_border_color;
-	font-family: $main_font_family;
+	font: 1.1em $main_font_family;
 	color: $input_color;
-	padding: 6px 15px;
+	padding: 1.1em 1.4em;
 	outline: none;
-	font-size: 16px;
-	font-weight: 400;
-	border-radius: 5px;
+	font-size: 1.1em;
+	font-weight: 500;
+	border-radius: 0.8em;
+	box-shadow: inset 0 2.5em 2.5em rgba(224, 227, 240, 0.05), inset 0 -0.375em 1.125em rgba(197, 189, 215, 0.15), inset 0 -2.5em 2.5em rgba(12, 2, 33, 0.1);
+	backdrop-filter: blur(2em);
 	transition: 0.3s;
+	transition-property: box-shadow, backdrop-filter, background;
+	position: relative;
 
 	&:hover {
 		border: 1px solid $input_hover_border_color;
 		background-color: $input_hover_bg_color;
+		box-shadow: inset 0 1.9em 2em rgba(224, 227, 240, 0.05), inset 0 -0.375em 1.125em rgba(197, 189, 215, 0.15), inset 0 -1.9em 1.9em rgba(12, 2, 33, 0.1);
 	}
 
 	&:focus {
 		border: 1px solid $input_focus_border_color;
-		background-color: $input_focus_bg_color;
+		// background-color: $input_focus_bg_color;
+		background-color: transparent;
+		box-shadow: inset 0 2.5em 2.5em rgba(224, 227, 240, 0.05), inset 0 -0.375em 1.125em rgba(197, 189, 215, 0.15), inset 0 -2.5em 2.5em rgba(12, 2, 33, 0.1);
+		backdrop-filter: blur(0.6em);
 	}
 
 	&.invalid {
@@ -92,9 +305,10 @@ input[type=radio] {
 	align-items: center;
 	justify-content: center;
 	flex: none;
-	height: 14px;
-	width: 14px;
-	color: #aaa;
+	height: 1.1em;
+	width: 1.1em;
+	color: #fff;
+	border-radius: 0.2em;
 	background: 0 0;
 	border: 1px solid;
 	overflow: hidden;
@@ -143,7 +357,7 @@ input[type=checkbox] {
 		content: "";
 		width: 40%;
 		height: 60%;
-		color: #000;
+		color: $color_withe;
 		margin-top: -3px;
 		border-right: 1px solid;
 		border-bottom: 1px solid;

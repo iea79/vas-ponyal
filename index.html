@@ -4,32 +4,324 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?0.1"/>
+    <title>ВасПонял</title><link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+<link rel="manifest" href="img/ico/site.webmanifest">
+<link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css/style.css?0.3"/>
   </head>
-  <body>
-    <header class="header">
+  <body class="vas-ponial">
+    <header class="header wow fadeInDown">
       <div class="header__content">
-        <div class="header__left"><a class="logo" href="/"><img src="img/logo.png" alt="alt"/></a></div>
-        <nav class="header__right">
+        <div class="header__left"><a class="logo" href="/"><img src="img/logo.svg" alt="Вас понял"/></a></div>
+        <nav class="header__nav">
+          <div class="navbar__toggle"></div>
           <ul class="navbar">
-            <li class="navbar__item"><a class="navbar__link" href="">Page1</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page2</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page3</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page4</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#product" data-scroll-to="">Продукт</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#price" data-scroll-to="">Цена</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#order" data-scroll-to="">свяжитесь с нами</a></li>
+            <li class="navbar__item"><i class="icon_login"></i><a class="navbar__link" href="https://app.ark.dtfactory.tech/" target="blank">Войти</a></li>
           </ul>
-        </nav>
+        </nav><a class="header__phone" href="tel: 8 800 350 01 62">8 800 350 01 62</a>
       </div>
     </header>
     <main class="main_content">
-      <div class="container_center"></div>
-    </main>
-    <footer class="footer">
-      <div class="footer__content">
-        <p></p>&copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i><a href="#">View Source</a>
+      <!-- begin home-->
+      <section class="home section" id="home">
+        <div class="container_center">
+          <div class="home__content wow fadeInUp">
+            <h1 class="section__title">Экспертная справочная система для специалистов лабораторий и органов по сертификации</h1><a class="btn" href="#bitrix-form">Получить демо-доступ</a>
+          </div>
+        </div>
+        <div class="home__img"><img src="img/home.png" alt=""/></div>
+      </section>
+      <!-- end home-->
+      <div class="advantages">
+        <div class="container_center">
+          <div class="advantages__list">
+            <div class="advantages__item wow fadeInUp" data-wow-delay="0s">
+              <div class="advantages__icon"><img src="img/advantages-1.svg" alt="Скорость работы"/></div>
+              <div class="advantages__name">Скорость работы</div>
+              <div class="advantages__text">Время ожидания не превышает 3 секунд</div>
+            </div>
+            <div class="advantages__item wow fadeInUp" data-wow-delay="0.25s">
+              <div class="advantages__icon"><img src="img/advantages-2.svg" alt="Точность поиска"/></div>
+              <div class="advantages__name">Точность поиска</div>
+              <div class="advantages__text">Система понимает вас с полуслова и находит то, что вы искали</div>
+            </div>
+            <div class="advantages__item wow fadeInUp" data-wow-delay="0.5s">
+              <div class="advantages__icon"><img src="img/advantages-3.svg" alt="Консультации экспертов"/></div>
+              <div class="advantages__name">Консультации экспертов</div>
+              <div class="advantages__text">Наши эксперты умеют совмещать оперативность и качество</div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+      <!-- begin loaded-->
+      <section class="loaded section" id="product">
+        <div class="container_center">
+          <div class="loaded__content">
+            <div class="loaded__left">
+              <div class="loadedSlider wow fadeInUp">
+                <div class="loadedSlider__img"><img src="img/loaded-1.jpg" alt=""/></div>
+                <div class="loadedSlider__img"><img src="img/loaded-2.jpg" alt=""/></div>
+              </div>
+              <div class="slick-nav">
+                <div class="slick-arrows slick-prev loadedSlider__prev"></div>
+                <div class="slick-arrows slick-next loadedSlider__next"></div>
+              </div>
+            </div>
+            <div class="loaded__right">
+              <h2 class="section__title">Скачивайте документы</h2>
+              <div class="loaded__list">
+                <div class="loaded__listItem"><span>Без ограничений</span></div>
+                <div class="loaded__listItem"><span>Неограниченные консультации экспертов</span></div>
+              </div>
+              <div class="loaded__bage"><img src="img/loaded-bage.svg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end loaded-->
+      <!-- begin mastering-->
+      <section class="mastering section" id="mastering">
+        <div class="container_center">
+          <h2 class="section__title">Не нужно долго осваивать систему</h2>
+          <div class="mastering__content">
+            <div class="mastering__item wow fadeInUp" data-wow-delay="0s">
+              <div class="mastering__img"><img src="img/mastering-0.svg" alt=""/></div>
+              <div class="mastering__text">1. Вводите запрос в поисковую строку</div>
+            </div>
+            <div class="mastering__item wow fadeInUp" data-wow-delay="0.25s">
+              <div class="mastering__img"><img src="img/mastering-1.svg" alt=""/></div>
+              <div class="mastering__text">2. Настраивайте фильтры</div>
+            </div>
+            <div class="mastering__item wow fadeInUp" data-wow-delay="0.5s">
+              <div class="mastering__img"><img src="img/mastering-2.svg" alt=""/></div>
+              <div class="mastering__text">3. Работайте с документом и/или списком документов</div>
+            </div>
+            <div class="mastering__item wow fadeInUp" data-wow-delay="0.75s">
+              <div class="mastering__img"><img src="img/mastering-3.svg" alt=""/></div>
+              <div class="mastering__text">4. Запрашивайте документы, которые не нашли в системе</div>
+            </div>
+          </div>
+          <div class="mastering__action"><a class="btn" href="#bitrix-form">Получить демо-доступ</a></div>
+        </div>
+      </section>
+      <!-- end mastering-->
+      <!-- begin uniq-->
+      <section class="uniq section" id="uniq">
+        <div class="container_center">
+          <h2 class="section__title">Уникальные особенности продукта</h2>
+          <div class="uniq__list">
+            <div class="uniq__item wow fadeInUp" data-wow-delay="0s">
+              <div class="uniq__img"><img src="img/uniq-0.svg" alt=""/></div>
+              <div class="uniq__text">Наличие консультаций по вопросам деятельности лабораторий</div>
+            </div>
+            <div class="uniq__item wow fadeInUp" data-wow-delay="0.25s">
+              <div class="uniq__img"><img src="img/uniq-1.svg" alt=""/></div>
+              <div class="uniq__text">Документы СМК (Правила для лабораторий и органов по сертификации)</div>
+            </div>
+            <div class="uniq__item wow fadeInUp" data-wow-delay="0.5s">
+              <div class="uniq__img"><img src="img/uniq-2.svg" alt=""/></div>
+              <div class="uniq__text">Реестры и разъяснения Росаккредитации</div>
+            </div>
+            <div class="uniq__item wow fadeInUp" data-wow-delay="0.75s">
+              <div class="uniq__img"><img src="img/uniq-3.svg" alt=""/></div>
+              <div class="uniq__text">Картотека аттестованных методик измерений</div>
+            </div>
+            <div class="uniq__item wow fadeInUp" data-wow-delay="1s">
+              <div class="uniq__img"><img src="img/uniq-4.svg" alt=""/></div>
+              <div class="uniq__text">Гид по аккредитации</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end uniq-->
+      <!-- begin youGet-->
+      <section class="youGet section" id="price">
+        <div class="container_center">
+          <div class="youGet__content wow fadeInUp">
+            <h2 class="section__title">За 6 000 рублей в месяц вы получаете:</h2>
+            <div class="youGet__body">
+              <div class="youGet__left">
+                <div class="youGet__list">
+                  <div class="youGet__item">
+                    <div class="youGet__count">01</div>
+                    <div class="youGet__text">Уверенность в принимаемых решениях</div>
+                  </div>
+                  <div class="youGet__item">
+                    <div class="youGet__count">02</div>
+                    <div class="youGet__text">Актуальную информация под рукой</div>
+                  </div>
+                  <div class="youGet__item">
+                    <div class="youGet__count">03</div>
+                    <div class="youGet__text">Быстрый и точный ответ на вопрос в повседневной работе</div>
+                  </div>
+                </div>
+              </div>
+              <div class="youGet__right"><a class="btn" href="#bitrix-form">Купить</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end youGet-->
+      <!-- begin experts-->
+      <section class="experts section" id="experts">
+        <div class="container_center">
+          <h2 class="section__title">Наши эксперты</h2>
+          <div class="experts__list">
+            <div class="experts__item wow fadeInUp" data-wow-delay="0s">
+              <div class="experts__img"><img src="img/expert-1.png" alt="Петр Придумко"/></div>
+              <div class="experts__name">Петр Придумко</div>
+              <div class="experts__text">Закончил с красным дипломом МГУ по специальности Промышленная безопасность на государственном предприятии. Работает в Ростехнадзоре и наказывает тех, кто там не работает.</div>
+            </div>
+            <div class="experts__item wow fadeInUp" data-wow-delay="0.3s">
+              <div class="experts__img"><img src="img/expert-2.png" alt="Кристина Соловьева"/></div>
+              <div class="experts__name">Кристина Соловьева</div>
+              <div class="experts__text">Кандидат наук, теоретик и практик в области ПБОТООС. Закончила курсы по управлению гневом "У нас проверки, к нам явился Ростехнадзор". Работает в компании "Роснефтьгазивотэтовотвсё"</div>
+            </div>
+            <div class="experts__item wow fadeInUp" data-wow-delay="0.6s">
+              <div class="experts__img"><img src="img/expert-3.png" alt="Эдуард Вишневский"/></div>
+              <div class="experts__name">Эдуард Вишневский</div>
+              <div class="experts__text">Доктор наук. Экзаменует студентов в МГУ на факультете Проектирование зданий и сооружений. Работал в компании Газпронасно несейчас и Роснефтьгази вотэто вотвсё на позиции главного специалиста по ПБ и ОТ.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end experts-->
+      <!-- begin review-->
+      <section class="review section" id="review">
+        <div class="container_center">
+          <div class="review__header">
+            <h2 class="section__title">Отзывы клиентов</h2>
+            <div class="slick-nav">
+              <div class="slick-arrows slick-prev review__prev"></div>
+              <div class="slick-arrows slick-next review__next"></div>
+            </div>
+          </div>
+          <div class="review__slider wow fadeInUp">
+            <div class="review__item">
+              <div class="review__head">
+                <div class="review__photo"><img src="img/ava.jpg" alt=""/></div>
+                <div class="review__user">
+                  <div class="review__name">Ксения Андреева</div>
+                  <div class="review__prof">коммерческий директор Нефтепромыш</div>
+                </div>
+              </div>
+              <div class="review__text">
+                <p>От лица сотрудников АО "Нефтепромыш" выражаю благодарность вам и вашему персоналу.</p>
+                <p>Сейчас каждый сотрудник нашего предприятия имеет постоянный доступ к документам по стандартизации, а справочная платформа "ВасПонял" поддерживает эту базу документов в актуальном состоянии и обеспечивает оперативной техподдержкой.</p>
+                <p>Благодарю за профессионализм, оперативность и качество консультаций экспертов. Их высокая квалификация позволила нам качественно описать стандарты и технические условия, подходящие нашему предприятию.</p>
+              </div>
+            </div>
+            <div class="review__item">
+              <div class="review__head">
+                <div class="review__photo"><img src="img/ava.jpg" alt=""/></div>
+                <div class="review__user">
+                  <div class="review__name">Ксения Андреева</div>
+                  <div class="review__prof">коммерческий директор Нефтепромыш</div>
+                </div>
+              </div>
+              <div class="review__text">
+                <p>От лица сотрудников АО "Нефтепромыш" выражаю благодарность вам и вашему персоналу.</p>
+                <p>Сейчас каждый сотрудник нашего предприятия имеет постоянный доступ к документам по стандартизации, а справочная платформа "ВасПонял" поддерживает эту базу документов в актуальном состоянии и обеспечивает оперативной техподдержкой.</p>
+                <p>Благодарю за профессионализм, оперативность и качество консультаций экспертов. Их высокая квалификация позволила нам качественно описать стандарты и технические условия, подходящие нашему предприятию.</p>
+              </div>
+            </div>
+            <div class="review__item">
+              <div class="review__head">
+                <div class="review__photo"><img src="img/ava.jpg" alt=""/></div>
+                <div class="review__user">
+                  <div class="review__name">Ксения Андреева</div>
+                  <div class="review__prof">коммерческий директор Нефтепромыш</div>
+                </div>
+              </div>
+              <div class="review__text">
+                <p>От лица сотрудников АО "Нефтепромыш" выражаю благодарность вам и вашему персоналу.</p>
+                <p>Сейчас каждый сотрудник нашего предприятия имеет постоянный доступ к документам по стандартизации, а справочная платформа "ВасПонял" поддерживает эту базу документов в актуальном состоянии и обеспечивает оперативной техподдержкой.</p>
+                <p>Благодарю за профессионализм, оперативность и качество консультаций экспертов. Их высокая квалификация позволила нам качественно описать стандарты и технические условия, подходящие нашему предприятию.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end review-->
+    </main>
+    <div class="footer">
+      <section class="footer__form" id="order">
+        <div class="footer__bg"><img class="wow fadeInUp" src="img/zoom.svg" alt=""/><img class="wow fadeInUp" src="img/book.svg" alt=""/><img class="wow fadeInUp" src="img/bootle.svg" alt=""/></div>
+        <div class="container_center">
+          <h2 class="section__title">Оставьте свои контакты</h2>
+          <form class="form wow fadeInUp" action="https://harp.su/rest/16/31nd42ppccgos0sr/crm.lead.add.json" data-success="Спасибо! Ваше сообщение отправлено.">
+            <input type="hidden" value="Заявка с сайта" name="FIELDS[TITLE]"/>
+            <div class="form__body">
+              <div class="form__left">
+                <div class="form__row">
+                  <input type="text" name="FIELDS[NAME]" placeholder="Имя" required="required"/>
+                </div>
+                <div class="form__row">
+                  <input type="text" name="FIELDS[EMAIL][0][VALUE]" placeholder="Электронная почта" required="required"/>
+                </div>
+                <div class="form__row">
+                  <input type="tel" name="FIELDS[PHONE][0][VALUE]" placeholder="Телефон" required="required"/>
+                </div>
+              </div>
+              <div class="form__right">
+                <div class="form__row">
+                  <textarea placeholder="Расскажите, чем мы можем вам помочь" name="FIELDS[COMMENTS]"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form__footer">
+              <div class="form__action">
+                <button class="btn" type="submit">Отправить</button>
+              </div>
+              <div class="form__privacy">Нажимая кнопку «отправить» вы соглашаетесь с обработкой персональных данных и принимаете политику конфендициальности</div>
+            </div>
+            <div class="form__message fadeInUp"> </div>
+          </form>
+        </div>
+      </section>
+      <div class="footer__middle">
+        <div class="footer__content">
+          <div class="footer__soc">
+            <div class="soc"><a class="icon_fb" href="" target="blank"></a><a class="icon_vk" href="" target="blank"></a><a class="icon_twit" href="" target="blank"></a><a class="icon_linked" href="" target="blank"></a></div>
+          </div>
+          <div class="footer__logo"><a class="logo" href=""><img src="img/logo-foot.svg" alt=""/></a>
+            <div class="logo__text">Экспертная система нового поколения</div>
+          </div>
+          <div class="footer__contact"><a class="footer__tel" href="tel: 8 800 350 01 62">8 800 350 01 62</a><a class="footer__mail" href="mailto: info@vasponyal.ru">info@vasponyal.ru</a></div>
+        </div>
+      </div>
+      <footer class="footer__bottom">
+        <div class="footer__content">
+          <div class="footer__copy">All rights reserved 2021 </div><a class="footer__policy" href="https://docs.google.com/document/d/1XlQ-xrCLBrRikFA-GkRHhtKJggRUkdy9LplonnY-XQM/edit?pli=1#" target="blank">Лицензионное соглашение </a> <a class="footer__policy" href="https://docs.google.com/document/d/1XlQ-xrCLBrRikFA-GkRHhtKJggRUkdy9LplonnY-XQM/edit?pli=1#" target="blank">Политика конфендициальности</a>
+        </div>
+      </footer>
+    </div>
+    <!-- Begin Modal orderForm-->
+    <div class="modal fade orderForm" id="orderForm">
+      <div class="modal-dialog">
+        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal-header">
+            <div class="modal-title">Оставьте свои контакты</div>
+          </div>
+          <div class="modal-body"> 
+            <div class="form__row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal orderForm--><script data-b24-form="click/2/hgz0rn" data-skip-moving="true"> (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })(window,document,'https://harp.su/upload/crm/form/loader_2_hgz0rn.js'); </script>
+    <button class="hidden" type="button"></button>
     <script src="js/jquery.js"></script>
-    <script src="js/function.js?0.1"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/function.js?0.3"></script>
   </body>
 </html>

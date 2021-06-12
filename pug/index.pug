@@ -1,4 +1,148 @@
 extends layout/layout.pug
 
 block content
-    .container_center
+    // begin home
+    section#home.home.section
+        .container_center
+            .home__content.wow.fadeInUp
+                h1.section__title Экспертная справочная система для специалистов лабораторий и органов по сертификации
+                a.btn(href="#bitrix-form") Получить демо-доступ
+        .home__img
+            img(src="img/home.png", alt="")
+
+    // end home
+
+    .advantages
+        .container_center
+            .advantages__list
+                -
+                    advArr = [
+                        {icon: 1, name: 'Скорость работы', text: 'Время ожидания не превышает 3 секунд'}, 
+                        {icon: 2, name: 'Точность поиска', text: 'Система понимает вас с полуслова и находит то, что вы искали'},
+                        {icon: 3, name: 'Консультации экспертов', text: 'Наши эксперты умеют совмещать оперативность и качество'}
+                    ]
+                each item, i in advArr
+                    .advantages__item.wow.fadeInUp(data-wow-delay=(i/4)+'s')
+                        .advantages__icon
+                            img(src="img/advantages-"+item.icon+".svg", alt=item.name)
+                        .advantages__name=item.name
+                        .advantages__text=item.text
+
+    // begin loaded
+    section#product.loaded.section
+        .container_center
+            .loaded__content
+                .loaded__left
+                    .loadedSlider.wow.fadeInUp
+                        .loadedSlider__img
+                            img(src="img/loaded-1.jpg", alt="")
+                        .loadedSlider__img
+                            img(src="img/loaded-2.jpg", alt="")
+                    .slick-nav
+                        .slick-arrows.slick-prev.loadedSlider__prev
+                        .slick-arrows.slick-next.loadedSlider__next
+                .loaded__right
+                    h2.section__title Скачивайте документы
+                    .loaded__list
+                        .loaded__listItem
+                            span Без ограничений
+                        .loaded__listItem
+                            span Неограниченные консультации экспертов
+                    .loaded__bage
+                        img(src="img/loaded-bage.svg", alt="")
+    // end loaded
+
+    // begin mastering
+    section#mastering.mastering.section
+        .container_center
+            h2.section__title Не нужно долго осваивать систему
+            .mastering__content
+                each item, i in ['1. Вводите запрос в поисковую строку', '2. Настраивайте фильтры', '3. Работайте с документом и/или списком документов', '4. Запрашивайте документы, которые не нашли в системе']
+                    .mastering__item.wow.fadeInUp(data-wow-delay=(i/4)+'s')
+                        .mastering__img
+                            img(src="img/mastering-"+i+".svg", alt="")
+                        .mastering__text=item
+
+            .mastering__action
+                a.btn(href="#bitrix-form") Получить демо-доступ
+
+
+    // end mastering
+
+    // begin uniq
+    section#uniq.uniq.section
+        .container_center
+            h2.section__title Уникальные особенности продукта
+            .uniq__list
+                each item, i in ['Наличие консультаций по вопросам деятельности лабораторий', 'Документы СМК (Правила для лабораторий и органов по сертификации)', 'Реестры и разъяснения Росаккредитации', 'Картотека аттестованных методик измерений', 'Гид по аккредитации']
+                    .uniq__item.wow.fadeInUp(data-wow-delay=(i/4)+'s')
+                        .uniq__img
+                            img(src="img/uniq-"+i+".svg", alt="")
+                        .uniq__text=item
+
+    // end uniq
+
+    // begin youGet
+    section#price.youGet.section
+        .container_center
+            .youGet__content.wow.fadeInUp
+                h2.section__title За 6 000 рублей в месяц вы получаете:
+                .youGet__body
+                    .youGet__left
+                        .youGet__list
+                            each item, i in ['Уверенность в принимаемых решениях', 'Актуальную информация под рукой', 'Быстрый и точный ответ на вопрос в повседневной работе']
+                                .youGet__item
+                                    .youGet__count="0"+(i+1) 
+                                    .youGet__text=item
+
+                    .youGet__right
+                        a.btn(href="#bitrix-form") Купить
+
+    // end youGet
+
+    // begin experts
+    section#experts.experts.section
+        .container_center
+            h2.section__title Наши эксперты
+            .experts__list
+                .experts__item.wow.fadeInUp(data-wow-delay='0s')
+                    .experts__img
+                        img(src="img/expert-1.png", alt="Петр Придумко")
+                    .experts__name Петр Придумко
+                    .experts__text Закончил с красным дипломом МГУ по специальности Промышленная безопасность на государственном предприятии. Работает в Ростехнадзоре и наказывает тех, кто там не работает.
+                .experts__item.wow.fadeInUp(data-wow-delay='0.3s')
+                    .experts__img
+                        img(src="img/expert-2.png", alt="Кристина Соловьева")
+                    .experts__name Кристина Соловьева
+                    .experts__text Кандидат наук, теоретик и практик в области ПБОТООС. Закончила курсы по управлению гневом "У нас проверки, к нам явился Ростехнадзор". Работает в компании "Роснефтьгазивотэтовотвсё"
+                .experts__item.wow.fadeInUp(data-wow-delay='0.6s')
+                    .experts__img
+                        img(src="img/expert-3.png", alt="Эдуард Вишневский")
+                    .experts__name Эдуард Вишневский
+                    .experts__text Доктор наук. Экзаменует студентов в МГУ на факультете Проектирование зданий и сооружений. Работал в компании Газпронасно несейчас и Роснефтьгази вотэто вотвсё на позиции главного специалиста по ПБ и ОТ.
+
+    // end experts
+
+    // begin review
+    section#review.review.section
+        .container_center
+            .review__header
+                h2.section__title Отзывы клиентов
+                .slick-nav
+                    .slick-arrows.slick-prev.review__prev
+                    .slick-arrows.slick-next.review__next
+            .review__slider.wow.fadeInUp
+                each item in ['', '', '']
+                    .review__item
+                        .review__head
+                            .review__photo
+                                img(src="img/ava.jpg", alt="")
+                            .review__user
+                                .review__name Ксения Андреева
+                                .review__prof коммерческий директор Нефтепромыш
+                        .review__text
+                            p От лица сотрудников АО "Нефтепромыш" выражаю благодарность вам и вашему персоналу.
+                            p Сейчас каждый сотрудник нашего предприятия имеет постоянный доступ к документам по стандартизации, а справочная платформа "ВасПонял" поддерживает эту базу документов в актуальном состоянии и обеспечивает оперативной техподдержкой.
+                            p Благодарю за профессионализм, оперативность и качество консультаций экспертов. Их высокая квалификация позволила нам качественно описать стандарты и технические условия, подходящие нашему предприятию.
+
+    // end review

@@ -1,10 +1,18 @@
-header.header
+header.header.wow.fadeInDown
     .header__content
         .header__left
             a.logo(href="/")
-                img(src="img/logo.png", alt="alt")
-        nav.header__right
+                img(src="img/logo.svg", alt="Вас понял")
+
+        nav.header__nav
+            .navbar__toggle
             ul.navbar
-                each navLink in [{name: 'Page1', href: ''},{name: 'Page2', href: ''},{name: 'Page3', href: ''},{name: 'Page4', href: ''},]
+                each navLink in [{name: 'Продукт', href: '#product'},{name: 'Цена', href: '#price'},{name: 'свяжитесь с нами', href: '#order'}]
                     li.navbar__item
-                        a.navbar__link(href= navLink.href)= navLink.name
+                        a.navbar__link(href= navLink.href data-scroll-to="")= navLink.name
+
+                li.navbar__item
+                    i.icon_login
+                    a.navbar__link(href="https://app.ark.dtfactory.tech/" target="blank") Войти
+
+        a.header__phone(href="tel: 8 800 350 01 62") 8 800 350 01 62
