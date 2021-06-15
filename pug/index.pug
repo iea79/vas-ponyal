@@ -34,10 +34,12 @@ block content
             .loaded__content
                 .loaded__left
                     .loadedSlider.wow.fadeInUp
-                        .loadedSlider__img
-                            img(src="img/loaded-1.jpg", alt="")
-                        .loadedSlider__img
-                            img(src="img/loaded-2.jpg", alt="")
+                        picture.loadedSlider__img
+                            source(srcset="img/loaded-1.webp" type="image/webp")
+                            img(src="img/loaded-1.png", alt="")
+                        picture.loadedSlider__img
+                            source(srcset="img/loaded-2.webp" type="image/webp")
+                            img(src="img/loaded-2.png", alt="")
                     .slick-nav
                         .slick-arrows.slick-prev.loadedSlider__prev
                         .slick-arrows.slick-next.loadedSlider__next
@@ -106,17 +108,20 @@ block content
             h2.section__title Наши эксперты
             .experts__list
                 .experts__item.wow.fadeInUp(data-wow-delay='0s')
-                    .experts__img
+                    picture.experts__img
+                        source(srcset="img/expert-1.webp" type="image/webp")
                         img(src="img/expert-1.png", alt="Петр Придумко")
                     .experts__name Петр Придумко
                     .experts__text Закончил с красным дипломом МГУ по специальности Промышленная безопасность на государственном предприятии. Работает в Ростехнадзоре и наказывает тех, кто там не работает.
                 .experts__item.wow.fadeInUp(data-wow-delay='0.3s')
-                    .experts__img
+                    picture.experts__img
+                        source(srcset="img/expert-2.webp" type="image/webp")
                         img(src="img/expert-2.png", alt="Кристина Соловьева")
                     .experts__name Кристина Соловьева
                     .experts__text Кандидат наук, теоретик и практик в области ПБОТООС. Закончила курсы по управлению гневом "У нас проверки, к нам явился Ростехнадзор". Работает в компании "Роснефтьгазивотэтовотвсё"
                 .experts__item.wow.fadeInUp(data-wow-delay='0.6s')
-                    .experts__img
+                    picture.experts__img
+                        source(srcset="img/expert-3.webp" type="image/webp")
                         img(src="img/expert-3.png", alt="Эдуард Вишневский")
                     .experts__name Эдуард Вишневский
                     .experts__text Доктор наук. Экзаменует студентов в МГУ на факультете Проектирование зданий и сооружений. Работал в компании Газпронасно несейчас и Роснефтьгази вотэто вотвсё на позиции главного специалиста по ПБ и ОТ.

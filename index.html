@@ -4,7 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>ВасПонял</title><link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
+    <title>ВасПонял</title>
+    <link rel="preload" href="fonts/Noahregular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/vp.ttf?u20cpr" as="font" type="font/ttf" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Noahbold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Noah-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/><link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
 <link rel="manifest" href="img/ico/site.webmanifest">
@@ -66,8 +70,12 @@
           <div class="loaded__content">
             <div class="loaded__left">
               <div class="loadedSlider wow fadeInUp">
-                <div class="loadedSlider__img"><img src="img/loaded-1.jpg" alt=""/></div>
-                <div class="loadedSlider__img"><img src="img/loaded-2.jpg" alt=""/></div>
+                <picture class="loadedSlider__img">
+                  <source srcset="img/loaded-1.webp" type="image/webp"/><img src="img/loaded-1.png" alt=""/>
+                </picture>
+                <picture class="loadedSlider__img">
+                  <source srcset="img/loaded-2.webp" type="image/webp"/><img src="img/loaded-2.png" alt=""/>
+                </picture>
               </div>
               <div class="slick-nav">
                 <div class="slick-arrows slick-prev loadedSlider__prev"></div>
@@ -175,17 +183,23 @@
           <h2 class="section__title">Наши эксперты</h2>
           <div class="experts__list">
             <div class="experts__item wow fadeInUp" data-wow-delay="0s">
-              <div class="experts__img"><img src="img/expert-1.png" alt="Петр Придумко"/></div>
+              <picture class="experts__img">
+                <source srcset="img/expert-1.webp" type="image/webp"/><img src="img/expert-1.png" alt="Петр Придумко"/>
+              </picture>
               <div class="experts__name">Петр Придумко</div>
               <div class="experts__text">Закончил с красным дипломом МГУ по специальности Промышленная безопасность на государственном предприятии. Работает в Ростехнадзоре и наказывает тех, кто там не работает.</div>
             </div>
             <div class="experts__item wow fadeInUp" data-wow-delay="0.3s">
-              <div class="experts__img"><img src="img/expert-2.png" alt="Кристина Соловьева"/></div>
+              <picture class="experts__img">
+                <source srcset="img/expert-2.webp" type="image/webp"/><img src="img/expert-2.png" alt="Кристина Соловьева"/>
+              </picture>
               <div class="experts__name">Кристина Соловьева</div>
               <div class="experts__text">Кандидат наук, теоретик и практик в области ПБОТООС. Закончила курсы по управлению гневом "У нас проверки, к нам явился Ростехнадзор". Работает в компании "Роснефтьгазивотэтовотвсё"</div>
             </div>
             <div class="experts__item wow fadeInUp" data-wow-delay="0.6s">
-              <div class="experts__img"><img src="img/expert-3.png" alt="Эдуард Вишневский"/></div>
+              <picture class="experts__img">
+                <source srcset="img/expert-3.webp" type="image/webp"/><img src="img/expert-3.png" alt="Эдуард Вишневский"/>
+              </picture>
               <div class="experts__name">Эдуард Вишневский</div>
               <div class="experts__text">Доктор наук. Экзаменует студентов в МГУ на факультете Проектирование зданий и сооружений. Работал в компании Газпронасно несейчас и Роснефтьгази вотэто вотвсё на позиции главного специалиста по ПБ и ОТ.</div>
             </div>
